@@ -10,3 +10,7 @@
 .factorypath
 
 /.vscode/
+
+/lib/*.jar
+/lib-spigot/*.jar
+

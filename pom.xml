@@ -60,7 +60,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <!-- Default Spigot version for nms implementation. Must be overridden  -->
-        <spigot.version>defaultVersion</spigot.version>
+        <!-- <spigot.version>defaultVersion</spigot.version> -->
+        <spigot.version>1.18.1-R0.1-SNAPSHOT</spigot.version>
     </properties>
 
     <repositories>
@@ -92,7 +93,7 @@
         <!-- AreaShop repo -->
         <repository>
             <id>areashop-repo</id>
-            <url>http://maven.wiefferink.me</url>
+            <url>https://repo.repsy.io/mvn/garagepoort/spigot/</url>
         </repository>
     </repositories>
 
@@ -253,7 +254,8 @@
                 <artifactId>spigot</artifactId>
                 <version>${spigot.version}</version>
                 <classifier>remapped-mojang</classifier>
-                <scope>provided</scope>
+                <scope>system</scope>
+                <systemPath>${project.basedir}/lib-spigot/spigot-1.18-R0.1-SNAPSHOT-remapped-mojang.jar</systemPath>
             </dependency>
 
             <!-- Only required for build to succeed ? -->

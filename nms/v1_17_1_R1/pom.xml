@@ -22,6 +22,14 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
             <classifier>remapped-mojang</classifier>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib-spigot/spigot-1.17.1-R0.1-SNAPSHOT-remapped-mojang.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib-spigot/spigot-api-1.17.1-R0.1-SNAPSHOT.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>de.epiceric</groupId>
